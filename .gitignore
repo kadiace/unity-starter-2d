@@ -36,7 +36,7 @@ Assets/AddressableAssetsData/*/*.bin*
 # IDE settings
 .vs/
 .idea/
-.vscode/*
+.vscode/
 
 # OS files
 .DS_Store
@@ -55,3 +55,4 @@ Packages/com.rlabrecque.steamworks.net/
 .ai
 .omo
 .opencode
+.playwright-mcp

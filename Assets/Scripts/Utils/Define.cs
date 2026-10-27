@@ -1,7 +1,7 @@
 public enum Scene
 {
     Unknown,
-    SampleScene,
+    Game,
 }
 
 public enum InputMode
