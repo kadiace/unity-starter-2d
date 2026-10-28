@@ -10,6 +10,7 @@ public class Managers : MonoBehaviour
     private readonly DataManager _dataManager = new();
     private readonly InputManager _inputManager = new();
     private readonly SceneManagerEx _sceneManager = new();
+    private readonly SoundManager _soundManager = new();
     private readonly GameStateManager _gameStateManager = new();
     private readonly SpawnManager _spawnManager = new();
 
@@ -18,6 +19,7 @@ public class Managers : MonoBehaviour
     public static DataManager Data => Instance._dataManager;
     public static InputManager Input => Instance._inputManager;
     public static SceneManagerEx Scene => Instance._sceneManager;
+    public static SoundManager Sound => Instance._soundManager;
     public static GameStateManager GameState => Instance._gameStateManager;
     public static SpawnManager Spawn => Instance._spawnManager;
 
@@ -52,6 +54,7 @@ public class Managers : MonoBehaviour
         _instance._poolManager.Init(_instance.transform);
         _instance._inputManager.Init();
         _instance._sceneManager.Init();
+        _instance._soundManager.Init();
         _instance._gameStateManager.Init();
         _instance._spawnManager.Init();
     }
